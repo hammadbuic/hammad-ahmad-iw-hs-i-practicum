@@ -1,0 +1,42 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/css/style.css")
+
+  body
+    .container
+      h1 Add a Book
+
+      form(action="/update-cobj", method="POST")
+
+        .form-group
+          label(for="name") Name
+          input#name(
+            type="text"
+            name="name"
+            placeholder="Enter book name"
+            required
+          )
+
+        .form-group
+          label(for="author") Author
+          input#author(
+            type="text"
+            name="author"
+            placeholder="Enter author"
+            required
+          )
+
+        .form-group
+          label(for="genre") Genre
+          input#genre(
+            type="text"
+            name="genre"
+            placeholder="Enter genre"
+            required
+          )
+
+        button(type="submit") Add Book
+
+      a(href="/") Return to the homepage
