@@ -2,25 +2,28 @@ doctype html
 html
   head
     title= title
+    meta(name="viewport", content="width=device-width, initial-scale=1")
     link(rel="stylesheet", href="/css/style.css")
 
   body
     .container
 
       h1 Books
+      p.subtitle Manage books stored in your HubSpot custom object.
 
       a.button(href="/update-cobj") Add to this table
 
-      table
-        thead
-          tr
-            th Name
-            th Author
-            th Genre
-
-        tbody
-          each book in books
+      .table-wrapper
+        table
+          thead
             tr
-              td= book.properties.name
-              td= book.properties.author
-              td= book.properties.genre
+              th Name
+              th Author
+              th Genre
+
+          tbody
+            each book in books
+              tr
+                td= book.properties.name
+                td= book.properties.author
+                td= book.properties.genre

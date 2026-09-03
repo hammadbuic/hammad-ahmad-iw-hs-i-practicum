@@ -27,6 +27,12 @@ The custom object is associated with HubSpot Contacts.
 - Pug
 - HubSpot CRM API
 
+
+## Screenshots
+
+![alt text](homepage.png)
+![alt text](add.png)
+
 ## Running Locally
 
 Install dependencies:
